@@ -1,0 +1,107 @@
+.hero {
+    height: 80dvh;
+    padding-top: 100px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../assets/heroImage.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(30%);
+    z-index: -1;
+    height: 80dvh;
+}
+
+.hero-content {
+    height: 70dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.button {
+    margin: 20px;
+    width: 15vw;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: var(--s-text);
+    font-family: "Times New Roman", serif;
+
+    border: solid 6px var(--color-white);
+    border-radius: 70px;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s backdrop-filter;
+}
+.button:hover {
+    backdrop-filter: blur(15px);
+}
+.button:active {
+    backdrop-filter: blur(20px);
+}
+
+.content1 {
+    height: 70dvh;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+}
+
+.content-text {
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.polariodDeck {
+    width: 50vh;
+}
+
+.content2 {
+    background-color: var(--color-brown);
+    height: 50dvh;
+    color: var(--color-white);
+    display: flex;
+    gap: 10vh;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cafeWorkers {
+    width: 50vh;
+    height: fit-content;
+    filter: brightness(70%);
+}
+
+.content3 {
+    height: 50dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content3-text {
+    width: 110vh;
+    height: fit-content;
+}
