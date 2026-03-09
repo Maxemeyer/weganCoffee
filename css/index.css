@@ -1,6 +1,5 @@
 .hero {
-    height: 80dvh;
-    padding-top: 100px;
+    height: 70dvh;
     text-align: center;
     color: var(--color-white);
 }
@@ -57,12 +56,10 @@
 
 .content1 {
     height: 70dvh;
-    display: grid;
-    grid-template-columns: min-content min-content;
-    grid-template-rows: min-content;
+    display: flex;
+    gap: 10vh;
     justify-content: center;
     align-items: center;
-    gap: 10vh;
 }
 
 .content-text {
@@ -85,6 +82,13 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+/* siehe reference Seite 9 alle Images nochmal anpassen */
+.cafeWorkers-container {
+    width: 50vh;
+    height: 50vh;
     overflow: hidden;
 }
 
