@@ -1,0 +1,30 @@
+main {
+    padding: 150px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.filialenCard {
+    display: flex;
+    gap: 5vh;
+    border: solid 8px var(--color-brown);
+    padding: 16px;
+    width: 60vw;
+}
+
+.filialenImage {
+    width: 50vh;
+    height: 40vh;
+    object-fit: cover;
+    object-position: right;
+    filter: brightness(80%);
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

@@ -1,23 +1,32 @@
+main {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
 
-h1 {
-    font-size: 48px;
+div {
+    display: flex;
+    gap: 10px;
+    width: 50vw;
 }
 
 /* Dot Leader from https://sqkhor.medium.com/css-dot-leaders-in-table-of-content-db26614665df */
 ul {
+    font-size: var(--s-text);
     padding: 0;
-    font-size: 18px;
 }
 
 li {
     display: flex;
-    gap: 10px;
-    width: 60dvw;
+    flex-direction: column;
 }
 
 span {
     white-space: nowrap;
-    font-size: 32px;
+    font-size: var(--m-text);
 }
 
 .priceTag {
@@ -32,6 +41,6 @@ span {
 }
 
 .dotLeader:after {
-    content: '..................................................';
+    content: '....................................................................................................';
     text-align: center;
 }
